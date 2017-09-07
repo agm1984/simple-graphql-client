@@ -1,0 +1,24 @@
+{
+  "name": "pac-testing-api",
+  "version": "0.0.1",
+  "description": "PAC Testing Platform",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=test && npm run babel-node -- warpcore/server.js",
+    "babel-node": "babel-node --presets=env",
+    "test": "jest --verbose"
+  },
+  "author": "Enthusiasts First",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.0.0",
+    "babel-preset-env": "^1.6.0",
+    "body-parser": "^1.17.2",
+    "cross-env": "^5.0.5",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "graphql-request": "^1.3.4",
+    "jest": "^21.0.1"
+  }
+}
